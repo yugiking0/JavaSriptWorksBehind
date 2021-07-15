@@ -54,7 +54,10 @@ Việc xử lý xóa những biến tạm, các khai báo không sử dụng n�
 Được phiên dịch hoặc biên dịch cùng lúc khi lập trình viên viết mã.
 
 - Khi viết ngôn ngữ các lập trình viên thường viết bằng ngôn ngữ **_`(Human Code)`_** có thể đọc được dể dàng, nhưng để cho máy tính hiểu thì các ngôn ngữ cần phải được biên dịch qua ngôn ngữ của máy **_`(Machine Code)`_** với các ký tự 0 và 1 để máy có thể thực hiện.
-- Việc biên dịch này được thực hiện ngay trong ngôn ngữ JavaScript khi thực hiện.
+
+  > Một số ngôn ngữ như: Java, FoxPro, Visual Basic, C#,... cần chạy chức năng Compiled trước khi build ra file .exe hoặc 1 file nào đó, sau đó mới chạy được.
+
+- Nhưng với JavaScript thì việc biên dịch này được thực hiện ngay trong lúc lập trình viên thực hiện viết mã.
 
 ![Compiled to Machine Code](./images/06-compiled01.png "Compiled to Machine Code")
 
