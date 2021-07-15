@@ -61,6 +61,8 @@ Việc xử lý xóa những biến tạm, các khai báo không sử dụng n�
 
 ![Compiled to Machine Code](./images/06-compiled01.png "Compiled to Machine Code")
 
+Xem thêm ở [`The JavaScript Engine and Runtime`](./plus21.JSER.md)
+
 ### 4. Multi-Paradigm
 
 ---
