@@ -143,23 +143,27 @@ Ngôn ngữ động, được nhập động khi khai báo biến.
 
 - Khi khởi tạo biến không cần định nghĩa biến sẽ là kiểu nào như 1 số ngôn ngữ khác.
 
-```C
+> Ví dụ: Ngôn ngữ C# cần khai báo kiểu biến khi khởi tạo:
+
+```C++
 int d = 3, f = 5;    /* khai báo và khởi tạo biến d và f. */
 byte z = 22;         /* khai báo và khởi tạo biến z. */
 double pi = 3.14159; /* khai báo và khởi tạo biến pi */
 char x = 'x';        /* khai báo và khởi tạo biến ký tự x. */
 ```
 
-- Biến trong quá trình sử dụng sẽ được xác định định dạng dựa trên giá trị truyền vào
-- Khi giá trị truyền vào kiểu dữ liệu thay đổi, thì kiểu dữu liệu của biến cũng bị thay đổi.
-
-![Dynamic Language](./images/12-dynamic01.png "Dynamic Language")
+- Trong khi với JavaScript thì không cần khai báo kiểu dữ liệu.
 
 ```js
 let x = 23; // as Number
 let y = 19;
 x = "Quang Duy"; // as String
 ```
+
+- Biến trong quá trình sử dụng sẽ được xác định định dạng dựa trên giá trị truyền vào
+- Khi giá trị truyền vào kiểu dữ liệu thay đổi, thì kiểu dữu liệu của biến cũng bị thay đổi.
+
+![Dynamic Language](./images/12-dynamic01.png "Dynamic Language")
 
 ### 8. Single-Threaded & Non-Blocking Event Loop Concurrency
 
