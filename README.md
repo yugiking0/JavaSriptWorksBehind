@@ -54,9 +54,14 @@ Việc xử lý xóa những biến tạm, các khai báo không sử dụng n�
 Được phiên dịch hoặc biên dịch cùng lúc khi lập trình viên viết mã.
 
 - Khi viết ngôn ngữ các lập trình viên thường viết bằng ngôn ngữ **_`(Human Code)`_** có thể đọc được dể dàng, nhưng để cho máy tính hiểu thì các ngôn ngữ cần phải được biên dịch qua ngôn ngữ của máy **_`(Machine Code)`_** với các ký tự 0 và 1 để máy có thể thực hiện.
-- Việc biên dịch này được thực hiện ngay trong ngôn ngữ JavaScript khi thực hiện.
+
+  > Một số ngôn ngữ như: Java, FoxPro, Visual Basic, C#,... cần chạy chức năng Compiled trước khi build ra file .exe hoặc 1 file nào đó, sau đó mới chạy được.
+
+- Nhưng với JavaScript thì việc biên dịch này được thực hiện ngay trong lúc lập trình viên thực hiện viết mã.
 
 ![Compiled to Machine Code](./images/06-compiled01.png "Compiled to Machine Code")
+
+Xem thêm ở [`The JavaScript Engine and Runtime`](./plus21.JSER.md)
 
 ### 4. Multi-Paradigm
 
@@ -143,23 +148,27 @@ Ngôn ngữ động, được nhập động khi khai báo biến.
 
 - Khi khởi tạo biến không cần định nghĩa biến sẽ là kiểu nào như 1 số ngôn ngữ khác.
 
-```C
+> Ví dụ: Ngôn ngữ C# cần khai báo kiểu biến khi khởi tạo:
+
+```C++
 int d = 3, f = 5;    /* khai báo và khởi tạo biến d và f. */
 byte z = 22;         /* khai báo và khởi tạo biến z. */
 double pi = 3.14159; /* khai báo và khởi tạo biến pi */
 char x = 'x';        /* khai báo và khởi tạo biến ký tự x. */
 ```
 
-- Biến trong quá trình sử dụng sẽ được xác định định dạng dựa trên giá trị truyền vào
-- Khi giá trị truyền vào kiểu dữ liệu thay đổi, thì kiểu dữu liệu của biến cũng bị thay đổi.
-
-![Dynamic Language](./images/12-dynamic01.png "Dynamic Language")
+- Trong khi với JavaScript thì không cần khai báo kiểu dữ liệu.
 
 ```js
 let x = 23; // as Number
 let y = 19;
 x = "Quang Duy"; // as String
 ```
+
+- Biến trong quá trình sử dụng sẽ được xác định định dạng dựa trên giá trị truyền vào
+- Khi giá trị truyền vào kiểu dữ liệu thay đổi, thì kiểu dữu liệu của biến cũng bị thay đổi.
+
+![Dynamic Language](./images/12-dynamic01.png "Dynamic Language")
 
 ### 8. Single-Threaded & Non-Blocking Event Loop Concurrency
 
